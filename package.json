@@ -1,6 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
+  "homepage": "https://c109156211.github.io/react112",
   "private": true,
   "dependencies": {
     "@emotion/core": "^11.0.0",
@@ -12,6 +13,7 @@
     "@testing-library/user-event": "^13.5.0",
     "antd": "^5.19.3",
     "formik": "^2.4.6",
+    "gh-pages": "^6.1.1",
     "i18next": "^23.12.2",
     "normalize.css": "^8.0.1",
     "qrcode.react": "^3.1.0",
@@ -32,7 +34,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
